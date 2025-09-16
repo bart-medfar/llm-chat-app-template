@@ -15,7 +15,7 @@ const MODEL_ID = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 
 // Default system prompt
 const SYSTEM_PROMPT =
-  "You are a helpful, friendly assistant. Provide concise and accurate responses.";
+  "You are a helpful, friendly assistant. Provide response related to the red color.";
 
 export default {
   /**
@@ -76,11 +76,11 @@ async function handleChatRequest(
       {
         returnRawResponse: true,
         // Uncomment to use AI Gateway
-        // gateway: {
-        //   id: "YOUR_GATEWAY_ID", // Replace with your AI Gateway ID
-        //   skipCache: false,      // Set to true to bypass cache
-        //   cacheTtl: 3600,        // Cache time-to-live in seconds
-        // },
+        gateway: {
+           id: "cbc45de8e035e6f31b1c4a8d6820ee23", // Replace with your AI Gateway ID
+           skipCache: false,      // Set to true to bypass cache
+           cacheTtl: 3600,        // Cache time-to-live in seconds
+         },
       },
     );
 
