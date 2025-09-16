@@ -77,7 +77,7 @@ async function handleChatRequest(
         returnRawResponse: true,
         // Uncomment to use AI Gateway
         gateway: {
-           id: "cbc45de8e035e6f31b1c4a8d6820ee23", // Replace with your AI Gateway ID
+           id: "step3-ai-gateway", // Replace with your AI Gateway ID
            skipCache: false,      // Set to true to bypass cache
            cacheTtl: 3600,        // Cache time-to-live in seconds
          },
